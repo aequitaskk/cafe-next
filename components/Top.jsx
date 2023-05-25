@@ -12,9 +12,9 @@ const Top = () => {
           className="object-cover"
         />
       </div>
-      <div className="relative h-[70vh] z-[10] flex justify-center items-center">
+      <div className="relative h-screen z-[10] flex justify-center items-center">
         <div className="flex flex-col justify-center items-center text-center  text-white">
-          <h1 className="text-5xl">SERVE YOU BETTER TASTE OF COFFEE</h1>
+          <h1 className="text-6xl font-extrabold">STEAMY BEANS</h1>
           <p className="text-2xl mt-2 mb-10 font-md tracking-wider">
             fresh place to drink coffee
           </p>
