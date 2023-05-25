@@ -1,11 +1,22 @@
-import React from "react";
+"use client";
+
+import { motion } from "framer-motion";
 import { TypingTextTitle } from "./TypingTextTitle";
 import Image from "next/image";
 
 const AboutUs = () => {
   return (
     <section className="h-screen bg-stone-200 py-32 px-10">
-      <div className="max-w-5xl mt-20 flex mx-auto">
+      <motion.div
+        className="max-w-5xl mt-20 flex mx-auto"
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: 50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
         <div className="flex md:gap-12 xl:gap-14">
           <div className="lg:flex-[1]">
             <Image
@@ -52,7 +63,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
