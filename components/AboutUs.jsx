@@ -6,15 +6,15 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <section className="h-screen bg-stone-200 py-32 px-10">
+    <section className="h-[800px] bg-stone-200 py-24 px-10">
       <motion.div
         className="max-w-5xl mt-20 flex mx-auto"
         initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 0.5 }}
+        whileInView="show"
+        transition={{ delay: 0.2 ,duration: 0.8 }}
         variants={{
           hidden: { opacity: 0, x: 50 },
-          visible: { opacity: 1, x: 0 },
+          show: { opacity: 1, x: 0 },
         }}
       >
         <div className="flex md:gap-12 xl:gap-14">
