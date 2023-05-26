@@ -6,7 +6,7 @@ import DessertsCard from "./DessertsCard";
 
 const Desserts = () => {
   return (
-    <section className="h-[850px] md:h-[800px] bg-gradient-to-tl from-stone-900 to-zinc-900 pt-12">
+    <section className="h-[950px] md:h-[800px] bg-gradient-to-tl from-stone-900 to-zinc-900 pt-12">
       <div className=" w-[460px] md:w-[700px] lg:w-[950px] xl:w-[1280px] mx-auto">
         <TypingText title="Desserts" />
         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-y-3 pt-12 ">
