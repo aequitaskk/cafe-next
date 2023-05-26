@@ -1,7 +1,7 @@
-import Image from "next/image";
+"use client";
+import { motion } from "framer-motion";
 import { TypingText } from "./TypingText";
 import { DessertsMenu } from "@/constant";
-import { motion } from "framer-motion";
 import DessertsCard from "./DessertsCard";
 
 const Desserts = () => {
@@ -11,7 +11,15 @@ const Desserts = () => {
         <TypingText title="Desserts" />
         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-y-3 pt-12 ">
           {DessertsMenu.map((dessert, index) => (
-            <DessertsCard key={dessert.id} {...dessert} />
+            <motion.div
+            key={dessert.id}
+            initial={{ opacity: 0}}
+            whileInView={{opacity:1}}
+            viewport={{ once: true}}
+            transition={{ duration:1, delay: index * 0.3}}
+            >
+              <DessertsCard key={dessert.id} {...dessert} />
+            </motion.div>
           ))}
         </div>
       </div>
