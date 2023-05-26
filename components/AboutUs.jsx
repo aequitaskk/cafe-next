@@ -6,9 +6,9 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <section className="h-[800px] bg-stone-200 py-24 px-10">
+    <section className="h-[700px] md:h-[800px] bg-stone-200 pt-16 px-10">
       <motion.div
-        className="max-w-5xl mt-20 flex mx-auto"
+        className="max-w-5xl md:mt-20 flex mx-auto"
         initial="hidden"
         whileInView="show"
         transition={{ delay: 0.2 ,duration: 0.8 }}
