@@ -57,7 +57,7 @@ const AboutUs = () => {
                   baristas. From classic favorites like lattes, cappuccinos, and
                   espressos to specialty drinks such as caramel macchiatos,
                   mochas, and seasonal blends, there is something to satisfy
-                  every coffee lover's palate.
+                  every coffee lover&apos;s palate.
                 </p>
               </div>
             </div>
