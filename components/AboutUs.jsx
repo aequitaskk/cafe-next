@@ -11,7 +11,7 @@ const AboutUs = () => {
         className="max-w-5xl md:mt-20 flex mx-auto"
         initial="hidden"
         whileInView="show"
-        transition={{ delay: 0.2 ,duration: 0.8 }}
+        transition={{ delay: 0.2, duration: 0.8 }}
         variants={{
           hidden: { opacity: 0, y: 50 },
           show: { opacity: 1, y: 0 },
