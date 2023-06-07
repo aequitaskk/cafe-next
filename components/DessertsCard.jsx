@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 const DessertsCard = ({ imgUrl }) => {
   return (
-    <div className="mx-auto relative group overflow-hidden rounded-xl h-[180px] w-[220px] lg:h-[200px] lg:w-[300px]">
-      <div className="transform transition-transform ease-out duration-500 group-hover:scale-125 object-cover">
-        <img src={imgUrl} alt="dessert" layout="fill" />
+    <div className="flex mx-auto relative group  h-[180px] w-[220px] lg:h-[200px] lg:w-[300px]">
+      <div className="flex transform transition-transform ease-out duration-500 group-hover:scale-110">
+        <Image src={imgUrl} alt="dessert" width={500} height={500} className="object-cover rounded-xl" />
       </div>
     </div>
   );
